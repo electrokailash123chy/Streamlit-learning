@@ -39,3 +39,6 @@ else:
 st.write("radio button example:")
 radio_choice = st.radio("Select an option:", options)
 st.write("You selected:", radio_choice) 
+st.write("date input example:")
+selected_date = st.date_input("Select a date:")
+st.write("You selected:", selected_date)
