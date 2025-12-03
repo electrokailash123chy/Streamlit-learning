@@ -28,6 +28,11 @@ st.write("Slider value is :", slider_value)
 st.write("progress bar example:")
 progress_bar = st.progress(0)
 for percent_complete in range(101):
-    time.sleep(0.5)
+    time.sleep(0.05)
     progress_bar.progress(percent_complete) 
 st.write("progress complete")
+st.write("checkbox example:")
+if st.checkbox("show/hide"):
+    st.write("Checkbox is checked!")
+else:
+    st.write("Checkbox is unchecked!")
