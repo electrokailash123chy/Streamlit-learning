@@ -36,3 +36,6 @@ if st.checkbox("show/hide"):
     st.write("Checkbox is checked!")
 else:
     st.write("Checkbox is unchecked!")
+st.write("radio button example:")
+radio_choice = st.radio("Select an option:", options)
+st.write("You selected:", radio_choice) 
