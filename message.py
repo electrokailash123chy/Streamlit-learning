@@ -1,6 +1,7 @@
 import streamlit as st  
 import pandas as pd
 import numpy as np
+import time
 st.title("Message Component Example")
 user_message = st.text_input("Enter your message:")
 if st.button("Submit"): 
@@ -24,3 +25,9 @@ st.line_chart(data)
 st.write("Adjust the slider:")
 slider_value = st.slider("Select a value:", 0, 100, 50)
 st.write("Slider value is :", slider_value) 
+st.write("progress bar example:")
+progress_bar = st.progress(0)
+for percent_complete in range(101):
+    time.sleep(0.5)
+    progress_bar.progress(percent_complete) 
+st.write("progress complete")
