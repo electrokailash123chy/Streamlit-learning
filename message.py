@@ -55,3 +55,6 @@ st.write("file downloader example:")
 text_file = " this is a sample text file for download."
 st.download_button("Download text file", text_file, file_name="sample.txt")
 st.write("You can download the above text file.")
+st.sidebar.write("This is the sidebar.")    
+sidebar_option = st.sidebar.selectbox("Sidebar option:", options)
+st.sidebar.write("You selected in sidebar:", sidebar_option)
