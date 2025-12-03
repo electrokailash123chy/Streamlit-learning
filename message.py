@@ -21,3 +21,6 @@ data = pd.DataFrame(
    columns=["A", "B", "C"]
 )
 st.line_chart(data)
+st.write("Adjust the slider:")
+slider_value = st.slider("Select a value:", 0, 100, 50)
+st.write("Slider value is :", slider_value) 
