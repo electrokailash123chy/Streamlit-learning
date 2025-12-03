@@ -51,3 +51,7 @@ st.write("You entered:", number_input)
 st.write("color picker example:")
 color = st.color_picker("Pick a color:", "#00f900")
 st.write("You selected:", color)
+st.write("file downloader example:")    
+text_file = " this is a sample text file for download."
+st.download_button("Download text file", text_file, file_name="sample.txt")
+st.write("You can download the above text file.")
