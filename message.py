@@ -131,3 +131,12 @@ if "counter" not in st.session_state:
 if st.button("Increment"):
     st.session_state.counter += 1
 st.write("Counter:", st.session_state.counter)
+st.write("Markdown Example:")
+st.markdown("""
+### This is a Markdown Header
+You can use **bold text**, *italic text*, or `inline code`.
+Create lists
+1. [Google](https://google.com)
+2. [Streamlit](https://streamlit.io)
+3. [GitHub](https://github.com)
+""")
