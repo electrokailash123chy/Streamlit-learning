@@ -2,6 +2,7 @@ import streamlit as st
 import pandas as pd
 import numpy as np
 import time
+from PIL import Image
 st.title("Message Component Example")
 user_message = st.text_input("Enter your message:")
 if st.button("Submit"): 
@@ -90,3 +91,5 @@ map_data = pd.DataFrame(
 )
 
 st.map(map_data)
+img = Image.open("kailash.jpg")
+st.image(img, caption="My Image", use_container_width=True)
