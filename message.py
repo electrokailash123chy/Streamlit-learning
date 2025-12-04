@@ -70,3 +70,9 @@ data_table = pd.DataFrame(
     }
 )
 st.table(data_table)
+st.write("Line Chart Example:")
+bar_chart_data = pd.DataFrame(
+    np.random.randn(20, 3),
+    columns=["Column A", "Column B", "Column C"]
+)
+st.bar_chart(bar_chart_data)
