@@ -93,3 +93,5 @@ map_data = pd.DataFrame(
 st.map(map_data)
 img = Image.open("kailash.jpg")
 st.image(img, caption="My Image", use_container_width=True)
+st.write("Video Example:")
+st.video("https://www.w3schools.com/html/mov_bbb.mp4")
