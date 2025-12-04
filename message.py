@@ -112,3 +112,8 @@ st.write("File Uploader Example:")
 file = st.file_uploader("Upload CSV", type="csv")
 if file:
     st.dataframe(pd.read_csv(file))
+import streamlit as st
+
+st.write("Select Slider Example:")
+choice = st.select_slider("Choose:", ["Low", "Medium", "High"], "Medium")
+st.write("You selected:", choice)
