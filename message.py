@@ -60,4 +60,13 @@ sidebar_option = st.sidebar.selectbox("Sidebar option:", options)
 st.sidebar.write("You selected in sidebar:", sidebar_option)
 st.write("metric example:")
 st.metric(label="Temperature", value="70 °F", delta="1.2 °F")
-st.write("You can see the temperature metric above.") 
+st.write("You can see the temperature metric above.")   
+st.write("data table example:")
+data_table = pd.DataFrame(
+    {
+        "column 1": [1, 2, 3, 4],
+        "column 2": [10, 20, 30, 40],
+        "column 3": ["A", "B", "C", "D"]
+    }
+)
+st.table(data_table)
