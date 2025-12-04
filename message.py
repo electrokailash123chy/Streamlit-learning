@@ -117,3 +117,7 @@ import streamlit as st
 st.write("Select Slider Example:")
 choice = st.select_slider("Choose:", ["Low", "Medium", "High"], "Medium")
 st.write("You selected:", choice)
+st.write("Expander Example:")
+with st.expander("More Info"):
+    st.write("This is hidden content.")
+    st.write("You can add details here.")
