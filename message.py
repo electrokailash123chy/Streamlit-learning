@@ -108,3 +108,7 @@ with st.form("my_form"):
     age = st.number_input("Age", 0, 120)
     if st.form_submit_button("Submit"):
         st.write(f"Hello {name}, you are {age} years old!")
+st.write("File Uploader Example:")
+file = st.file_uploader("Upload CSV", type="csv")
+if file:
+    st.dataframe(pd.read_csv(file))
