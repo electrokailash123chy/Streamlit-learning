@@ -82,3 +82,11 @@ area_chart_data = pd.DataFrame(
     columns=["Column X", "Column Y", "Column Z"]
 )
 st.area_chart(area_chart_data)
+st.write("Khwopa engineering college locations on map:")
+map_data = pd.DataFrame(
+    [[27.67088, 85.43969],
+     [27.67104, 85.42982]],
+    columns=["lat", "lon"]
+)
+
+st.map(map_data)
