@@ -121,3 +121,13 @@ st.write("Expander Example:")
 with st.expander("More Info"):
     st.write("This is hidden content.")
     st.write("You can add details here.")
+st.write("Progress Spinner Example:")
+with st.spinner("Processing..."):
+    time.sleep(2)  # Simulate a long-running process
+st.success("Done!")  
+st.write("Session State Example:")
+if "counter" not in st.session_state:
+    st.session_state.counter = 0
+if st.button("Increment"):
+    st.session_state.counter += 1
+st.write("Counter:", st.session_state.counter)
