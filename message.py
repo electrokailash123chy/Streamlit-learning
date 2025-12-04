@@ -99,3 +99,12 @@ st.write("Audio Example:")
 st.audio("https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3")
 st.write("Code Snippet Example:")
 st.code("import streamlit as st\n\nst.title('Hello, Streamlit!')", language="python")
+import streamlit as st
+
+st.write("Form Example:")
+
+with st.form("my_form"):
+    name = st.text_input("Name")
+    age = st.number_input("Age", 0, 120)
+    if st.form_submit_button("Submit"):
+        st.write(f"Hello {name}, you are {age} years old!")
