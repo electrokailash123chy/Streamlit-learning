@@ -76,3 +76,9 @@ bar_chart_data = pd.DataFrame(
     columns=["Column A", "Column B", "Column C"]
 )
 st.bar_chart(bar_chart_data)
+st.write("Area Chart Example:")
+area_chart_data = pd.DataFrame(
+    np.random.randn(20, 3),
+    columns=["Column X", "Column Y", "Column Z"]
+)
+st.area_chart(area_chart_data)
